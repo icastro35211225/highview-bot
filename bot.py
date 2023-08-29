@@ -56,8 +56,10 @@ circle = driver.find_element(By.CLASS_NAME, 'circle-inner')
 message = circle.find_element(By.TAG_NAME, 'h2').text
 
 if "Denied" in message: 
+    print(message)
     print('DENIED Loser')
 else:
     emailConfirmation()
+    print(message)
 
 driver.quit()

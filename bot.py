@@ -54,7 +54,7 @@ submit('vehicleInformationVIP')
 
 circle = driver.find_element(By.CLASS_NAME, 'circle-inner')
 message = circle.find_element(By.TAG_NAME, 'h2').text
-confirmationCode = circle.find_element(By.TAG_NAME, 'h3')
+confirmationCode = circle.find_element(By.TAG_NAME, 'h3').text
 
 if "Denied" in message: 
     print(message)
